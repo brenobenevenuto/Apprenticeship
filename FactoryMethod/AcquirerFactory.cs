@@ -10,6 +10,11 @@ namespace FactoryMethod
 {
     public abstract class AcquirerFactory
     {
+        /// <summary>
+        ///     (Fabrica) Metodo que vai retornar a instancia correta 
+        /// </summary>
+        /// <param name="enumAcquirer"></param>
+        /// <returns></returns>
         public abstract IAcquirer CreateAcquirer(EnumAcquirer enumAcquirer);
     }
 }

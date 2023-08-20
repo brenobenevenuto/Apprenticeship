@@ -11,6 +11,12 @@ namespace FactoryMethod
 {
     public class SelectAcquirer : AcquirerFactory
     {
+        /// <summary>
+        ///     Retorna a instancia correta, conforme a adquirente passada.
+        /// </summary>
+        /// <param name="enumAcquirer"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
         public override IAcquirer CreateAcquirer(EnumAcquirer enumAcquirer)
         {
             switch (enumAcquirer) 
